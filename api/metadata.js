@@ -12,7 +12,7 @@ module.exports.do = function(req, res){
         },
         'blocks': [{
             "name":"getProfileByJson",
-            "description": "Generates a personality profile for the author of the input text. The service accepts a maximum of 20 MB of input content. It can analyze text in Arabic, English, Japanese, or Spanish and return its results in a variety of languages.",
+            "description": "Generates a personality profile for the author of the json input. The service accepts a maximum of 20 MB of input content. It can analyze text in Arabic, English, Japanese, or Spanish and return its results in a variety of languages.",
             "args":[
                 {
                     name: "username",
@@ -29,7 +29,7 @@ module.exports.do = function(req, res){
                 {
                     name: "language",
                     type: "String",
-                    info: "The language of the input text for the request:`ar` (Arabic), `en` (English, the default), `es` (Spanish), `ja` (Japanese)",
+                    info: "The language of the json input for the request:`ar` (Arabic), `en` (English, the default), `es` (Spanish), `ja` (Japanese)",
                     required: false
                 },
                 {
@@ -59,7 +59,7 @@ module.exports.do = function(req, res){
                 {
                     name: "contentItems",
                     type: "JSON",
-                    info: "An array of ContentItem objects that provides the input text for the request. See README for more info.",
+                    info: "An array of ContentItem objects that provides the input for the request. See README for more info.",
                     required: true
                 }
             ], 
@@ -120,7 +120,7 @@ module.exports.do = function(req, res){
             'callbacks':[{'name':'error','info':'Error'}, {'name':'success','info':'Success'}]
         }, {
             "name":"getProfileByHtml",
-            "description": "Generates a personality profile for the author of the input text. The service accepts a maximum of 20 MB of input content. It can analyze text in Arabic, English, Japanese, or Spanish and return its results in a variety of languages.",
+            "description": "Generates a personality profile for the author of the input html. The service accepts a maximum of 20 MB of input content. It can analyze text in Arabic, English, Japanese, or Spanish and return its results in a variety of languages.",
             "args":[
                 {
                     name: "username",
@@ -137,7 +137,7 @@ module.exports.do = function(req, res){
                 {
                     name: "language",
                     type: "String",
-                    info: "The language of the input text for the request:`ar` (Arabic), `en` (English, the default), `es` (Spanish), `ja` (Japanese)",
+                    info: "The language of the input html for the request:`ar` (Arabic), `en` (English, the default), `es` (Spanish), `ja` (Japanese)",
                     required: false
                 },
                 {
