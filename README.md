@@ -5,8 +5,8 @@ The IBM Watson™ Personality Insights service enables applications to derive in
 
 ## How to get credentials: 
 0. Register to [IBM Bluemix Console](https://console.ng.bluemix.net/registration/) 
-1. After log in choose Natural Language Classifier from [services](https://console.ng.bluemix.net/catalog/?category=watson)
-2. Connect Natural Language Classifier to your application at the left side, choose pricing plan and click on 'Create' button at the bottom of the page.
+1. After log in choose Personality Insights from [services](https://console.ng.bluemix.net/catalog/?category=watson)
+2. Connect Personality Insights to your application at the left side, choose pricing plan and click on 'Create' button at the bottom of the page.
 3. Click on 'Service Credentials' tab to see your username and password.
 
 ## IBMWatsonPersonalityInsights.getProfileByJson
