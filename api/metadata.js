@@ -4,7 +4,7 @@ module.exports.do = function(req, res){
         "tagline": "IBMWatsonPersonalityInsights API Package",
         "keywords": ["API"],
         "description": "The IBM Watson™ Personality Insights service enables applications to derive insights from social media, enterprise data, or other digital communications.",
-        'image': 'https://avatars0.githubusercontent.com/u/9221727?v=3&s=200',
+        'image': 'https://www.ibm.com/blogs/bluemix/wp-content/uploads/2015/12/WatsonDocumentConversion.png',
         'repo': 'https://github.com/RapidSoftwareSolutions/Marketplace-IBMWatsonPersonalityInsights-Package',
         'accounts': {
             "domain": "https://www.ibm.com/watson",
