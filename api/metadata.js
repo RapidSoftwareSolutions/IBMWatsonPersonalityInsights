@@ -3,11 +3,11 @@ module.exports.do = function(req, res){
         'package': 'IBMWatsonPersonalityInsights',
         "tagline": "IBMWatsonPersonalityInsights API Package",
         "keywords": ["API"],
-        "description": "Enables applications to derive insights from social media, enterprise data, or other digital communications.",
+        "description": "The IBM Watson™ Personality Insights service enables applications to derive insights from social media, enterprise data, or other digital communications.",
         'image': 'https://avatars0.githubusercontent.com/u/9221727?v=3&s=200',
         'repo': 'https://github.com/RapidSoftwareSolutions/Marketplace-IBMWatsonPersonalityInsights-Package',
         'accounts': {
-            "domain": "https://www.ibm.com/watson?ref=rapidapi",
+            "domain": "https://www.ibm.com/watson",
             "credentials": ["username", "password"]
         },
         'blocks': [{
@@ -108,13 +108,13 @@ module.exports.do = function(req, res){
                     name: "version",
                     type: "String",
                     info: "The requested version of the response format as a date in the form YYYY-MM-DD; for example, specify 2016-10-20 for October 20, 2016. The parameter allows the service to update its response format for new versions without breaking existing clients.",
-                    required: false
+                    required: true
                 },
                 {
                     name: "text",
                     type: "String",
                     info: "Text body. A maximum of 20 MB of content to be analyzed.",
-                    required: false
+                    required: true
                 }
             ], 
             'callbacks':[{'name':'error','info':'Error'}, {'name':'success','info':'Success'}]
@@ -162,13 +162,13 @@ module.exports.do = function(req, res){
                     name: "version",
                     type: "String",
                     info: "The requested version of the response format as a date in the form YYYY-MM-DD; for example, specify 2016-10-20 for October 20, 2016. The parameter allows the service to update its response format for new versions without breaking existing clients.",
-                    required: false
+                    required: true
                 },
                 {
                     name: "html",
                     type: "String",
                     info: "Html body. A maximum of 20 MB of content to be analyzed.",
-                    required: false
+                    required: true
                 }
             ], 
             'callbacks':[{'name':'error','info':'Error'}, {'name':'success','info':'Success'}]
