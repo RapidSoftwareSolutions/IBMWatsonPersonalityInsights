@@ -1,3 +1,5 @@
+[![](https://scdn.rapidapi.com/RapidAPI_banner.png)](https://rapidapi.com/package/IBMWatsonPersonalityInsights/functions?utm_source=RapidAPIGitHub_IBMPersonalityFunctions&utm_medium=button&utm_content=RapidAPI_GitHub)
+
 # IBMWatsonPersonalityInsights Package
 The IBM Watson™ Personality Insights service enables applications to derive insights from social media, enterprise data, or other digital communications.
 * Domain: https://www.ibm.com/watson
