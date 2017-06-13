@@ -5,11 +5,22 @@ The IBM Watson™ Personality Insights service enables applications to derive in
 * Domain: https://www.ibm.com/watson
 * Credentials: username, password
 
-## How to get credentials: 
-0. Register to [IBM Bluemix Console](https://console.ng.bluemix.net/registration/) 
+## How to get credentials:
+0. Register to [IBM Bluemix Console](https://console.ng.bluemix.net/registration/)
 1. After log in choose Personality Insights from [services](https://console.ng.bluemix.net/catalog/?category=watson)
 2. Connect Personality Insights to your application at the left side, choose pricing plan and click on 'Create' button at the bottom of the page.
 3. Click on 'Service Credentials' tab to see your username and password.
+
+
+## Custom datatypes:
+ |Datatype|Description|Example
+ |--------|-----------|----------
+ |Datepicker|String which includes date and time|```2016-05-28 00:00:00```
+ |Map|String which includes latitude and longitude coma separated|```50.37, 26.56```
+ |List|Simple array|```["123", "sample"]```
+ |Select|String with predefined values|```sample```
+ |Array|Array of objects|```[{"Second name":"123","Age":"12","Photo":"sdf","Draft":"sdfsdf"},{"name":"adi","Second name":"bla","Age":"4","Photo":"asfserwe","Draft":"sdfsdf"}] ```
+
 
 ## IBMWatsonPersonalityInsights.getProfileByJson
 Generates a personality profile for the author of the input josn. The service accepts a maximum of 20 MB of input content. It can analyze text in Arabic, English, Japanese, or Spanish and return its results in a variety of languages.
@@ -23,9 +34,9 @@ Generates a personality profile for the author of the input josn. The service ac
 | rawScores             | Boolean    | Indicates whether a raw score in addition to a normalized percentile is to be returned for each characteristic; raw scores are not compared with a sample population. By default (false), only normalized percentiles are returned.
 | consumptionPreferences| String     | Indicates whether consumption preferences are to be returned with the results. By default (false), they are not.
 | version               | String     | The requested version of the response format as a date in the form YYYY-MM-DD; for example, specify 2016-10-20 for October 20, 2016. The parameter allows the service to update its response format for new versions without breaking existing clients.
-| contentItems          | JSON       | An array of ContentItem objects that provides the input html for the request. See README for more info.
+| contentItems          | List       | An array of ContentItem objects that provides the input html for the request. See README for more info.
 
-#### `contentItems` field example: 
+#### `contentItems` field example:
 ```json
 "contentItems": [{
 	"id": "text_1",
@@ -33,7 +44,7 @@ Generates a personality profile for the author of the input josn. The service ac
 }]
 ```
 
-#### `contentItems` item format: 
+#### `contentItems` item format:
 
 | Field       | Type       | Description
 |-------------|------------|----------
@@ -74,4 +85,3 @@ Generates a personality profile for the author of the input html. The service ac
 | consumptionPreferences| String     | Indicates whether consumption preferences are to be returned with the results. By default (false), they are not.
 | version               | String     | The requested version of the response format as a date in the form YYYY-MM-DD; for example, specify 2016-10-20 for October 20, 2016. The parameter allows the service to update its response format for new versions without breaking existing clients.
 | html                  | String     | Html body. A maximum of 20 MB of content to be analyzed.
-

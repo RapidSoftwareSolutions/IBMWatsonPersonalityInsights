@@ -58,11 +58,16 @@ module.exports.do = function(req, res){
                 },
                 {
                     name: "contentItems",
-                    type: "JSON",
+                    type: "List",
+                    structure:{
+                      name:"contentItem",
+                      type:"JSON",
+                      info:"Single contentItem"
+                    }
                     info: "An array of ContentItem objects that provides the input for the request. See README for more info.",
                     required: true
                 }
-            ], 
+            ],
             'callbacks':[{'name':'error','info':'Error'}, {'name':'success','info':'Success'}]
         }, {
             "name":"getProfileByPlainText",
@@ -116,7 +121,7 @@ module.exports.do = function(req, res){
                     info: "Text body. A maximum of 20 MB of content to be analyzed.",
                     required: true
                 }
-            ], 
+            ],
             'callbacks':[{'name':'error','info':'Error'}, {'name':'success','info':'Success'}]
         }, {
             "name":"getProfileByHtml",
@@ -170,7 +175,7 @@ module.exports.do = function(req, res){
                     info: "Html body. A maximum of 20 MB of content to be analyzed.",
                     required: true
                 }
-            ], 
+            ],
             'callbacks':[{'name':'error','info':'Error'}, {'name':'success','info':'Success'}]
         }]
     })
