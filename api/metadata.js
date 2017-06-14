@@ -63,7 +63,7 @@ module.exports.do = function(req, res){
                       name:"contentItem",
                       type:"JSON",
                       info:"Single contentItem"
-                    }
+                    },
                     info: "An array of ContentItem objects that provides the input for the request. See README for more info.",
                     required: true
                 }
