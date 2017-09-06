@@ -28,25 +28,29 @@ module.exports.do = function(req, res){
                 },
                 {
                     name: "language",
-                    type: "String",
+                    type: "Select",
+                    options: ["ar", "en", "es", "ja"],
                     info: "The language of the json input for the request:`ar` (Arabic), `en` (English, the default), `es` (Spanish), `ja` (Japanese)",
                     required: false
                 },
                 {
                     name: "responseLanguage",
-                    type: "String",
+                    type: "Select",
+                    options: ["ar", "de", "en", "es", "fr", "it", "ja", "ko", "pt-br", "zh-cn", "zh-tw"],
                     info: "The desired language of the response: `ar` (Arabic); `de` (German); `en` (English, the default); `es` (Spanish); `fr` (French); `it` (Italian); `ja` (Japanese); `ko` (Korean); `pt-br` (Brazilian Portuguese); `zh-cn` (Simplified Chinese); `zh-tw` (Traditional Chinese)",
                     required: false
                 },
                 {
                     name: "rawScores",
-                    type: "Boolean",
+                    type: "Select",
+                    options: ["true", "false"],
                     info: "Indicates whether a raw score in addition to a normalized percentile is to be returned for each characteristic; raw scores are not compared with a sample population. By default (false), only normalized percentiles are returned.",
                     required: false
                 },
                 {
                     name: "consumptionPreferences",
-                    type: "String",
+                    type: "Select",
+                    options: ["true", "false"],
                     info: "Indicates whether consumption preferences are to be returned with the results. By default (false), they are not.",
                     required: false
                 },
@@ -87,25 +91,29 @@ module.exports.do = function(req, res){
                 },
                 {
                     name: "language",
-                    type: "String",
+                    type: "Select",
+                    options: ["ar", "en", "es", "ja"],
                     info: "The language of the input text for the request:`ar` (Arabic), `en` (English, the default), `es` (Spanish), `ja` (Japanese)",
                     required: false
                 },
                 {
                     name: "responseLanguage",
-                    type: "String",
+                    type: "Select",
+                    options: ["ar", "de", "en", "es", "fr", "it", "ja", "ko", "pt-br", "zh-cn", "zh-tw"],
                     info: "The desired language of the response: `ar` (Arabic); `de` (German); `en` (English, the default); `es` (Spanish); `fr` (French); `it` (Italian); `ja` (Japanese); `ko` (Korean); `pt-br` (Brazilian Portuguese); `zh-cn` (Simplified Chinese); `zh-tw` (Traditional Chinese)",
                     required: false
                 },
                 {
                     name: "rawScores",
-                    type: "Boolean",
+                    type: "Select",
+                    options: ["true", "false"],
                     info: "Indicates whether a raw score in addition to a normalized percentile is to be returned for each characteristic; raw scores are not compared with a sample population. By default (false), only normalized percentiles are returned.",
                     required: false
                 },
                 {
                     name: "consumptionPreferences",
-                    type: "String",
+                    type: "Select",
+                    options: ["true", "false"],
                     info: "Indicates whether consumption preferences are to be returned with the results. By default (false), they are not.",
                     required: false
                 },
@@ -141,25 +149,29 @@ module.exports.do = function(req, res){
                 },
                 {
                     name: "language",
-                    type: "String",
+                    type: "Select",
+                    options: ["ar", "en", "es", "ja"],
                     info: "The language of the input html for the request:`ar` (Arabic), `en` (English, the default), `es` (Spanish), `ja` (Japanese)",
                     required: false
                 },
                 {
                     name: "responseLanguage",
-                    type: "String",
+                    type: "Select",
+                    options: ["ar", "de", "en", "es", "fr", "it", "ja", "ko", "pt-br", "zh-cn", "zh-tw"],
                     info: "The desired language of the response: `ar` (Arabic); `de` (German); `en` (English, the default); `es` (Spanish); `fr` (French); `it` (Italian); `ja` (Japanese); `ko` (Korean); `pt-br` (Brazilian Portuguese); `zh-cn` (Simplified Chinese); `zh-tw` (Traditional Chinese)",
                     required: false
                 },
                 {
                     name: "rawScores",
-                    type: "Boolean",
+                    type: "Select",
+                    options: ["true", "false"],
                     info: "Indicates whether a raw score in addition to a normalized percentile is to be returned for each characteristic; raw scores are not compared with a sample population. By default (false), only normalized percentiles are returned.",
                     required: false
                 },
                 {
                     name: "consumptionPreferences",
-                    type: "String",
+                    type: "Select",
+                    options: ["true", "false"],
                     info: "Indicates whether consumption preferences are to be returned with the results. By default (false), they are not.",
                     required: false
                 },

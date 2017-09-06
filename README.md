@@ -2,7 +2,7 @@
 
 # IBMWatsonPersonalityInsights Package
 The IBM Watson™ Personality Insights service enables applications to derive insights from social media, enterprise data, or other digital communications.
-* Domain: https://www.ibm.com/watson
+* Domain: [IBM](https://www.ibm.com/watson)
 * Credentials: username, password
 
 ## How to get credentials:
@@ -29,12 +29,12 @@ Generates a personality profile for the author of the input josn. The service ac
 |-----------------------|------------|----------
 | username              | credentials| Username obtained from IBM Bluemix.
 | password              | credentials| Password obtained from IBM Bluemix.
-| language              | String     | The language of the input html for the request:`ar` (Arabic), `en` (English, the default), `es` (Spanish), `ja` (Japanese)
+| language              | String     | The language of the input json for the request:`ar` (Arabic), `en` (English, the default), `es` (Spanish), `ja` (Japanese)
 | responseLanguage      | String     | The desired language of the response: `ar` (Arabic); `de` (German); `en` (English, the default); `es` (Spanish); `fr` (French); `it` (Italian); `ja` (Japanese); `ko` (Korean); `pt-br` (Brazilian Portuguese); `zh-cn` (Simplified Chinese); `zh-tw` (Traditional Chinese)
 | rawScores             | Boolean    | Indicates whether a raw score in addition to a normalized percentile is to be returned for each characteristic; raw scores are not compared with a sample population. By default (false), only normalized percentiles are returned.
 | consumptionPreferences| String     | Indicates whether consumption preferences are to be returned with the results. By default (false), they are not.
 | version               | String     | The requested version of the response format as a date in the form YYYY-MM-DD; for example, specify 2016-10-20 for October 20, 2016. The parameter allows the service to update its response format for new versions without breaking existing clients.
-| contentItems          | List       | An array of ContentItem objects that provides the input html for the request. See README for more info.
+| contentItems          | List       | An array of ContentItem objects that provides the input html for the request.
 
 #### `contentItems` field example:
 ```json
